@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Variables and JS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h2>Update CSS Variables with <span class='top'>JS</span></h2>
+
+  <div class="controls">
+    <label for="spacing"> Spacing:</label>
+    <input id="spacing" type="range" name="spacing" min="10" max="100" value="20" data-sizing="px">
+
+    <label for="blur">  Blur:</label>
+    <input id="blur" type="range" name="blur" min="0" max="20" value="5" data-sizing="px">
+
+    <label for="colour">  Color 1:</label>
+    <input id="colour" type="color" name="colour1" value="#ff0000">
+    <label for="colour">  Color 2:</label>
+    <input id="colour" type="color" name="colour2" value="#00ff00">
+    <label for="colour">  Color 3:</label>
+    <input id="colour" type="color" name="colour3" value="#0000ff">
+    <label for="colour">  Base Color:</label>
+    <input id="colour" type="color" name="colourbase" value="#ffffff">
+  </div>
+  <center>
+    <img src="images/Zen.jpg" />
+  </center>
+  <script src="index.js">
+  </script>
+
+</body>
+
+</html>

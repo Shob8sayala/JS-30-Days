@@ -1,0 +1,40 @@
+:root {
+  --colour1: #ff0000;
+  --colour2: #00ff00;
+  --colour3: #0000ff;
+  --colourbase: #ffffff;
+  --spacing: 80px;
+  --blur: 1px;
+}
+body{
+        text-align: center;
+        color: var(--colourbase);
+        background-color: var(--colourbase);
+}
+label{
+        -webkit-filter: invert(100%);
+        font-size: 2rem;
+}
+h2{
+        font-size: 50px;
+        font-weight: 100;
+        -webkit-filter: invert(100%);
+}
+.top {
+        background: linear-gradient(to  right,var(--colour1),var(--colour2),var(--colour3));
+        
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 900 !important;
+        -webkit-filter: invert(100%);
+}
+img {
+  width: 70vw;
+  filter: blur(var(--blur));
+  border-top: var(--spacing) solid var(--colour2);
+  border-right: var(--spacing) solid var(--colour3);
+  border-left: var(--spacing) solid var(--colour1);
+  border-bottom: var(--spacing) solid transparent;
+  background: linear-gradient(to right,var(--colour1),var(--colour2),var(--colour3));
+  margin: 50px;
+}

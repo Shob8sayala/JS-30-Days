@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+        <h1>MOOJIKKK</h1>
+        <div class="keys">
+                <div data-key="65" class="key">
+                        <kbd>A</kbd>
+                        <span class="sound">clap</span>
+                </div>
+                <div data-key="83" class="key">
+                        <kbd>S</kbd>
+                        <span class="sound">hihat</span>
+                </div>
+                <div data-key="68" class="key">
+                        <kbd>D</kbd>
+                        <span class="sound">kick</span>
+                </div>
+                <div data-key="70" class="key">
+                        <kbd>F</kbd>
+                        <span class="sound">openhat</span>
+                </div>
+                <div data-key="71" class="key">
+                        <kbd>G</kbd>
+                        <span class="sound">boom</span>
+                </div>
+                <div data-key="72" class="key">
+                        <kbd>H</kbd>
+                        <span class="sound">ride</span>
+                </div>
+                <div data-key="74" class="key">
+                        <kbd>J</kbd>
+                        <span class="sound">snare</span>
+                </div>
+                <div data-key="75" class="key">
+                        <kbd>K</kbd>
+                        <span class="sound">tom</span>
+                </div>
+                <div data-key="76" class="key">
+                        <kbd>L</kbd>
+                        <span class="sound">tink</span>
+                </div>
+        </div>
+        <audio data-key="65" src="instrumentSounds/clap.wav"></audio>
+        <audio data-key="83" src="instrumentSounds/hihat.wav"></audio>
+        <audio data-key="68" src="instrumentSounds/kick.wav"></audio>
+        <audio data-key="70" src="instrumentSounds/openhat.wav"></audio>
+        <audio data-key="71" src="instrumentSounds/boom.wav"></audio>
+        <audio data-key="72" src="instrumentSounds/ride.wav"></audio>
+        <audio data-key="74" src="instrumentSounds/snare.wav"></audio>
+        <audio data-key="75" src="instrumentSounds/tom.wav"></audio>
+        <audio data-key="76" src="instrumentSounds/tink.wav"></audio>
+        <audio loop autoplay id="myaudio">
+                <source src="music/Konosuba.mp3" type="audio/mp3" >
+                Your browser does not support the audio element.
+        </audio>
+        <script>
+                var audio = document.getElementById("myaudio");
+                audio.volume = 0.05;
+        </script>
+        <script src='index.js'></script>
+</body>
+
+</html>

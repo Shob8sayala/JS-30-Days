@@ -1,0 +1,59 @@
+h1 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: 2px 2px #ffc600;
+  text-align: center;
+  font-size: 3rem;
+  color: black;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("images/final_5f7e2d806651a2007ec13771_841677.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: 5px solid black;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.1s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+  text-shadow: 0 0 0.5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 3rem;
+}
+
+.sound {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #fffbe8;
+  text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 10px #ffc600, 0 0 20px #ffc600,
+    0 0 30px #ffc600, 0 0 45px #ffc600, 0 0 50px #ffc600;
+}
+audio {
+  display: none;
+}
